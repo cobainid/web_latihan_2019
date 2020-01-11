@@ -1,0 +1,47 @@
+@media only screen and (max-width: 768px){
+
+.h-200 {
+	min-height: 200px;
+}
+
+.cloud1 {
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+.btn-toggle {
+	display: block;
+}
+ul.nav {
+	display: none;
+}
+
+.btn-toggle:focus ~ ul.nav,ul.nav:hover {
+	display: block;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	padding: 10px;
+	background-color: #fff;
+	z-index: 999;
+}
+
+.cloud2{
+	top: 20px;
+	right: 10px;
+}
+
+section p.sec-desc{
+	width: 100%;
+}
+
+.testi{
+	width: 100%;
+}
+
+.width-50 {
+	width: 100%;
+	text-align: center;
+}
+}

@@ -1,0 +1,464 @@
+
+
+body {
+	font-family: 'Open Sans';
+	font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Myanmar Text';
+}
+
+.myanmar-text {
+	font-family: 'Myanmar Text';
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+
+.pd-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pd-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.pd-30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.pd-40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.pd-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.pd-5 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+
+
+.pds-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pds-20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.pds-30 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.pds-40 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.pds-50 {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.pds-5 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+
+section {
+	min-height: 100vh;
+}
+
+.img-logo-header {
+	max-width: 150px;
+}
+
+
+
+
+.navbar {
+	padding: 30px;
+	color: #666;
+	position: absolute;
+	top: 20px;
+	left: 60px;
+	right: 60px;
+	font-size: 18px;
+}
+
+
+.navbar .nav .nav-item .nav-link {
+	color: #333;
+}
+
+
+.navbar .nav .nav-item:hover .dropdown {
+	display: block;
+	list-style-type: none;
+}
+
+.navbar .nav .nav-item .dropdown::before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: -20px;
+	left: 20px;
+	color: #444;
+	/*background-color: #fff;*/
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent #fff transparent;
+}
+.navbar .nav .nav-item .dropdown {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.navbar .nav .nav-item .dropdown .nav-link:hover {
+	background-color: rgba(230,60,80,.1);
+}
+
+
+.navbar .nav .nav-item.active {
+	border-bottom: 2px solid rgba(245,78,90,.3);
+}
+
+.fixed {
+	position: fixed;
+	top: 20px;
+	left: 40px;
+	right: 40px;
+}
+
+
+
+.iconic {
+	background-color: transparent;
+	color: #333;
+	border: 0;
+}
+
+.pembuka-title {
+	color: rgba(60,45,125,.6);
+	display: block;
+	font-family: 'Myanmar Text';
+	font-size: 42px;
+
+}
+
+.pembuka-desc {
+	width: 60%;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+
+.pembuka-link {
+	padding: 15px 5px;
+	color: #333;
+	transition: .5s;
+	font-weight: bold;
+	border-bottom: 2px solid rgba(234,65,98,.5);
+}
+
+.pembuka-link:hover {
+	color: rgba(234,65,98,.5);
+	transition: .5s;
+}
+
+#pembuka {
+	background-image: url('../assets/flower-1.jpg');
+	background-size: 50%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+#unggul {
+	background-image: url('../assets/unggul.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.unggul-box {
+	text-align: center;
+}
+.unggul-title {
+	font-size: 28px;
+	font-family: 'Myanmar Text';
+}
+
+
+.unggul-box .unggul-icons {
+	font-size: 42px;
+	padding: 10px;
+	color: rgba(245,55,76,.7);
+}
+
+.unggul-desc {
+	font-size: 14px;
+	color: #bbb;
+}
+
+
+.latin {
+	font-family: 'Kunstler Script';
+	font-size: 42px;
+	font-weight: 700;
+	color: rgba(245,55,76,.7);
+}
+
+
+h3.title {
+	font-weight: 700;
+}
+
+
+.fs-32 {
+	font-size: 32px;
+}
+.fs-64 {
+	font-size: 64px;
+}
+
+.head {
+	position: relative;
+	color: #fff;
+}
+
+
+.head:hover .hovered {
+	opacity: 1;
+}
+
+.head .hovered i:hover {
+	background-color: #fff; 
+	color: #000;
+	transition: .5s;
+	border-radius: 100%;
+}
+
+.head .hovered i{
+	padding: 10px 13px;
+}
+
+
+.hovered {
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	background-color: rgba(123,54,234,.8);
+	transition: .5s;
+}
+
+.fs-12 {
+	font-size: 12px;
+}
+.fs-24{
+	font-size: 24px;
+}
+
+
+.text-black {
+	color: #222;
+}
+.text-blue {
+	color: rgba(34,76,123);
+}
+
+.harga {
+	font-size: 24px;
+}
+
+
+.product-box {
+
+}
+
+.img-h-250 {
+	height: 250px;
+}
+
+.star {
+	color: gold;
+}
+
+
+
+
+
+#pilihan {
+	background-image: url('../assets/section-pilihan.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.trans-50{
+	transform: translate(0,-50px);
+}
+
+.box-pilihan {
+	box-shadow: 0 0 10px #eee;
+	transition: .5s;
+	padding: 0;
+}
+
+.bg-1 {
+	background-color: rgba(250,211,211)
+}
+
+.bordered-bottom {
+	padding: 10px;
+	display: block;
+	width: 80%;
+	margin: 0 auto 10px;
+	border-bottom: 3px solid rgba(223,45,78,.5);
+}
+
+
+ul.pilihan {
+	list-style-type: none;
+	margin: 0;
+	padding-inline-start: 0;
+}
+
+ul.pilihan li {
+	padding: 20px;
+}
+
+
+ul.pilihan li:nth-child(odd){
+	background-color: rgba(200,211,211);
+}
+
+
+.btn-pink {
+	background-color: rgba(211,45,67);
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 20px;
+}
+
+
+.box-pilihan:hover {
+	box-shadow: 0 0 20px #aaa;
+	transition: .5s;
+}
+
+
+
+#blog {
+	background-color: #fcfafa;
+}
+
+.img-200 
+{
+	height: 200px;	
+}
+
+#blog .boxed {
+	font-family: 'Candara';
+	font-size: 16px;
+}
+
+#blog .boxed .title {
+	font-size: 24px;
+	font-family: 'Lucida Fax';
+	font-weight: bold;
+}
+#blog .boxed a {
+	color: rgba(245,55,76,.7);
+	font-size: 18px;
+	font-family: 'Candara';
+}
+#blog .boxed .overlay {
+	position: relative;
+}
+#blog .boxed .overlay::before {
+	content: '';
+	background-color: #000;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+
+#blog .boxed:hover .overlay::before {
+	opacity: .3;
+}
+
+.btn-bullet:hover {
+	color: #fff;
+}
+
+.btn-bullet {
+
+	padding: 10px 13px;
+	border-radius: 100%;
+	background-color: rgba(245,55,76,.7);
+	color: #fff;
+}
+
+
+
+footer {
+	min-height: auto;
+	background-image: url('../assets/footer.png');
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.w-150{
+	max-width: 150px;
+}
+
+.fixed {
+	position: fixed!important;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px){
+	.nav{
+		display: none;
+	}
+	.img-container{
+		padding: 0;
+		margin: 10px;
+	}
+	.img-tentang {
+		max-width: 100%;
+	}
+	.carousel-content{
+		padding-top: 40%;
+	}
+}

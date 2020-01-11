@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uu drag And drop</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+	<div id="lokasi" class="box" ondrop="dropDrop(event)" ondragover="allowDrop(event)" style="display: block;margin-bottom: 10px;"></div>
+	<div id="lokasi" class="box" ondrop="dropAdd(event)" ondragover="allowDrop(event)"></div>
+	<div id="lokasi2" class="box" ondrop="dropAdd(event)" ondragover="allowDrop(event)"></div>
+	<img src="assets/Logo.png" draggable="true" ondragstart="drag(event)" id="img1">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		let num = 0;
+		function dropDrop(data){
+  		data.preventDefault();
+  		let uwu = data.dataTransfer.getData('uwu');
+  		console.log($(document.getElementById(uwu)));
+  		$($(document.getElementById(uwu))).remove();
+  	}
+		function dropAdd(data){
+  		data.preventDefault();
+  		num = num+1;
+			let uwu = data.dataTransfer.getData('uwu');
+			let ano = document.getElementById(uwu);
+			let clone = $('#'+uwu).clone();
+			clone[0].id = 'clone'+num;
+			console.log(clone[0]);
+			console.log(document.getElementById(uwu));
+			// $(ano).remove(); //hapus
+			// data.target.appendChild(ano); //tambah
+
+			data.target.appendChild(clone[0]);
+		}
+		function drag(data){
+			data.dataTransfer.setData('uwu',data.target.id);
+		}
+		function allowDrop(ev){
+			ev.preventDefault();
+		}
+	</script>
+</body>
+</html>

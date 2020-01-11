@@ -1,0 +1,542 @@
+body {
+	font-family: 'Tw Cen MT';
+	font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6,.product-title,.team-name {
+	color: #D44532;
+	font-family: 'Forte';
+}
+
+section {
+	min-height: 100vh;
+}
+
+
+
+.himg-480 {
+	height: 480px;
+}
+
+.himg-200 {
+	height: 200px;
+	margin: 10px;
+}
+
+.himg-c {
+	overflow: hidden;
+}
+
+.himg-100p {
+	max-height: 100%; 
+}
+.scale-2{
+	transform: scale(1.2);
+}
+
+
+.fs-18{
+	font-size: 18px;
+}
+.fs-24{
+	font-size: 24px;
+}
+.fs-32{
+	font-size: 32px;
+}
+.fs-28{
+	font-size: 28px;
+}
+.fs-52{
+	font-size: 52px;
+}
+
+.fs-42{
+	font-size: 42px;
+}
+
+.fs-48{
+	font-size: 48px;
+}
+
+
+.mt-10 {
+	margin-top: 10px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+.mr-20 {
+	margin-right: 20px;
+}
+.mr-30 {
+	margin-right: 30px;
+}
+.mr-40 {
+	margin-right: 40px;
+}
+
+
+
+
+.pd-s-5 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.pd-s-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pd-s-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.pd-10{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.pd-20{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.pd-30{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.pd-40{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.bg-black{
+	background-color: #000;
+}
+
+.btn-trans {
+	background: transparent;
+	border: 2px solid transparent;
+	padding: 10px 25px;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.btn-orange {
+	border-color: orange;
+	transition: .4s;
+}
+.btn-orange:hover {
+	background: orange;
+	transition: .4s;
+}
+
+.btn-white {
+	border-color: white;
+	transition: .4s;
+}
+.btn-white:hover {
+	background: white;
+	color: #222;
+	transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.absolute-head {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.img-banner-container {
+	display: block;
+	text-align: center;
+}
+
+
+.navbar ul.nav li.nav-item {
+	font-size: 18px; 
+}
+
+
+.navbar ul.nav li.nav-item a.nav-link {
+	color: #ddd;
+}
+
+
+.navbar ul.nav li.nav-item a.nav-link.active {
+	color: #D44532;
+}
+.navbar ul.nav li.nav-item a.nav-link.active:hover {
+	color: #D44532;
+}
+
+.navbar ul.nav li.nav-item a.nav-link:hover {
+	color: #fff;
+}
+
+.nav-icon {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+}
+.nav-icon .nav-item-icon {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+
+
+.nav-icon .nav-item-icon:focus {
+	outline: none;
+}
+
+.nav-icon .nav-item-icon button{
+	background-color: transparent;
+	color: #ddd;
+	border: 0;
+}
+
+.nav-icon .nav-item-icon button:hover {
+	color: #fff;
+}
+
+.slider-container {
+	position: relative;
+}
+
+.slider-content {
+	width: 40%;
+	margin: 0 auto;
+	position: absolute;
+	top: 40vh;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	color: #D44532;
+	text-align: center;
+}
+
+
+.product-name {
+	font-family: 'Forte';
+	font-size: 52px;
+	color: #fff;
+}
+.product-discount {
+	font-family: 'Candara';
+	font-size: 28px;
+	border-width: 2px 0 2px 0;
+	border-style: solid;
+	border-color: #D44532;
+}
+.product-coupon {
+	font-size: 28px;
+	font-weight: 700;
+}
+.coupon-code {
+	color: #fff;
+}
+
+
+.sec-title {
+	text-align: center;
+}
+
+.sec-detail {
+	text-align: center;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#best-product {
+	background: url('../assets/section-bg.jpg') no-repeat;
+}
+
+.carded {
+	border-width: 4px;
+	border-style: solid;
+	border-color: #fff;
+	transition: 1s;
+	padding: 4px;
+	text-align: center;
+	box-shadow: 0 0 40px #eee;
+	background-color: #fff;
+} 
+
+.carded:hover {
+	transition: 1s;
+	border-color: #D44532 #D44532 #D4A532 #D4A532;
+}
+
+
+.product-title {
+	font-size: 18px;
+}
+.product-harga {
+	color: #999;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.carded-img {
+	position: relative;
+}
+.carded-img:hover::before {
+	background-color: #999;
+	opacity: .5;
+} 
+.carded-img::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px; 
+}
+
+
+#parallax {
+	background-image: url('../assets/parallax2.png');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#parallax2{
+	background-image: url('../assets/parallax2.jpg');
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed; 
+}
+
+#parallax2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.7);
+}
+
+.para-content {
+	position: relative;
+	z-index: 2;
+}
+
+.font-tipis {
+	font-family: 'Candara';
+	color: orange
+}
+
+.para-discount {
+	font-family: "Berlin Sans FB";
+	color: orange;
+}
+
+.img-rounded {
+	border-radius: 100%;
+}
+
+.img-team {
+	border: 8px solid transparent;
+	transition: .5s;
+}
+.img-team:hover {
+	border-color: #AE4545;
+	transition: .5s;
+}
+
+.orange-card {
+	border-radius: 0;
+	border-color: orange; 
+}
+
+.orange-card .card-header {
+	background-color: orange;
+}
+
+.team-desc {
+	font-family: 'Candara';
+}
+
+
+
+
+.bg-grey {
+	background-color: #f4f4f4;
+}
+
+.text-black {
+	color: #000;
+}
+
+
+.keunggulan-box {
+	border: 1px solid #888;
+	border-radius: 10px;
+	position: relative;
+}
+.keunggulan-box .icon {
+	position: absolute;
+	top: -35px;
+	left: 40%;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	color: #eee;
+	text-align: center;
+}
+
+.keunggulan-box .icon i {
+	font-size: 42px;
+}
+
+.bg-red {
+	background-color: #C46578;
+}
+.bg-blue {
+	background-color: #6578C4;
+}
+.bg-green {
+	background-color: #65C478;
+}
+
+
+
+
+
+footer {
+	background-image: url('../assets/footer.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed; 
+	min-height: 100vh;
+}
+
+.nav-footer {
+	list-style-type: none;
+	margin: 0;
+}
+.nav-footer .nav-item {
+	display: block;
+	padding: 0 0 10px;
+}
+.nav-footer .nav-item a {
+	color: #fff;
+}
+.nav-footer .nav-item a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+
+.sosmed-ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sosmed-ul .sosmed-li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.sosmed-ul .sosmed-li a {
+	font-size: 28px;
+	color: #fff;
+
+}
+
+.sosmed-ul .sosmed-li a:hover {
+	color: orange;
+}
+
+
+.copyright {
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Candara';
+	color: #fff;
+	padding: 10px;
+}
+.copyright p {
+	display: block;
+}
+.copyright span {
+	color: orange
+}
+
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

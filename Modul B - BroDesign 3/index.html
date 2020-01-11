@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Company Profile</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<img src="img/favicon.png">
+				<div class="nav">
+					<button class="btn toggle-btn"><i class="fa fa-bars"></i></button>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="tentang.html" class="nav-link">Tentang Kami</a>
+						</li>
+						<li class="nav-item">
+							<a href="#pelayanan" class="nav-link">Pelayanan</a>
+						</li>
+						<li class="nav-item">
+							<a href="#produk" class="nav-link">Produk Kami</a>
+						</li>
+						<li class="nav-item">
+							<a href="#testimoni" class="nav-link">Testimoni</a>
+						</li>
+						<li class="nav-item">
+							<a href="#hubungi" class="nav-link">Hubungi Kami</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="myC1" class="carousel slide" data-ride="carousel">
+			<div class="carousel-indicators">
+				<li data-target="#myC1" data-slide-to="0" class="active"></li>
+				<li data-target="#myC1" data-slide-to="1"></li>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="slider">
+						<img src="img/industri.jpg" class="img-slide">
+						<div class="slider-caption">
+							<h3 class="slide-title">
+								Uwu Team
+							</h3>
+							<p class="slide-text">
+								Ini adalah contoh deskripsi di slider
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slider">
+						<img src="img/industri.jpg" class="img-slide">
+						<div class="slider-caption">
+							<h3 class="slide-title">
+								Uwu Team
+							</h3>
+							<p class="slide-text">
+								Ini adalah contoh deskripsi di slider
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="slider">
+						<img src="img/industri.jpg" class="img-slide">
+						<div class="slider-caption">
+							<h3 class="slide-title">
+								Uwu Team
+							</h3>
+							<p class="slide-text">
+								Ini adalah contoh deskripsi di slider
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="tentang"></section>
+	<section id="hubungi"></section>
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			let music = new Audio();
+			music.src = 'backsound.mp3';
+			music.autoplay = true;
+			console.log(music);
+				function uu(){
+					music.play();
+				}
+			document.addEventListener('scroll',function(){
+				music.play();
+			})	
+		})
+
+	</script>
+</body>
+</html>

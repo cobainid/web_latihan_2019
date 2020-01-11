@@ -1,0 +1,39 @@
+#canvas {
+	width: 600px;
+	height: 600px;
+	background-image: url('back.jpg');
+}
+
+.board {
+	position: absolute;
+	color: #fff;
+}
+
+.bannerMulai,
+.bannerSelesai {
+	position: absolute;
+	color: #fff;
+	top: 200px;
+	left: 170px;
+	text-align: center;
+	font-size: 18px;
+}
+.bannerMulai h1,
+.bannerSelesai h1 {
+	color: #f00;
+}
+
+.bannerSelesai #btnUlangi{
+	background-color: #fff;
+	color: #000;
+	border-radius: 5px;
+	display: block;
+}
+.bannerMulai #btnMulai {
+	color: #f00;
+	cursor: pointer;
+}
+
+.bannerSelesai {
+	display: none;
+}

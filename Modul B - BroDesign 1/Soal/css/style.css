@@ -1,0 +1,358 @@
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+nav{
+	background: rgba(2,2,2,.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+h1{
+	margin: 5px;
+	padding: 5px;
+	font-size: 24px;
+	color: #fff;
+	font-family: 'MontSerrat';
+	display: inline-block;
+	border-left: 4px solid #239622;
+}
+ul.nav{
+	padding: 10px;
+	display: inline-block;
+	float: right;
+}
+li.nav-item{
+	display: inline-block;
+	font-size: 12px;
+}
+li.nav-item a{
+	color: #fff;
+}
+.slider{
+	position: relative;
+}
+
+.slider-image{
+	height: 100vh;
+	width: 100vw;
+}
+.slider-content{
+	position: absolute;
+	bottom: 10px;
+	width: 500px;
+	right: 10px;
+	padding: 10px;
+	background-color: rgba(2,2,2,.6);
+	color: #fff;
+}
+.icon-info{
+	font-size: 32px;
+}
+
+#info{
+	display: block;
+	background-color: #222;
+}
+
+.info{
+	background-color: #222;
+	padding: 10px;
+}
+.info .title-info{
+	font-size: 24px;
+	color: #fff;
+}
+
+
+.section-title{
+	font-family: 'MontSerrat';
+	position: relative;
+	text-align: center;
+}
+.section-title::after{
+	content: '';
+	width: 50px;
+	height: 4px;
+	background-color: #238732;
+	position: absolute;
+	bottom: -5px;
+	left: 48%;
+}
+
+
+#tentang {
+	background-color: #eee;
+	padding: 20px 0;
+}
+
+p.desc{
+	text-align: center
+}
+
+#tentang > .mt-5 {
+	text-align: center
+}
+
+#tentang > .card{
+	position: relative;
+}
+.card-icon{
+	position: absolute;
+	top: 180px;
+	left: 45%;
+	width: 40px;
+	padding: 10px 0 0 14px;
+	height: 40px;
+	background-color: #23A054;
+	border-radius: 100%;
+}
+
+h4.card-title,h5.card-title{
+	font-weight: 700;
+}
+
+.card-content{
+	padding: 20px 10px 10px;
+}
+.card-top-image{
+	height: 200px;
+}
+
+#porto{
+	background-color: #eee;
+	padding: 20px 0 ;
+}
+
+.porto-btn{
+	text-align: center;
+	padding: 10px;
+}
+
+.btn-bro {
+	background-color: #fff;
+	border-radius: 4px;
+	margin-top: 4px;
+	color: #222;
+	padding: 5px 15px;
+	margin-left: 10px;
+}
+
+.btn-bro.active{
+	background-color: #23A712;
+	color: #fff;
+}
+
+#porto .card {
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+.card-head{
+	position: relative;
+}
+
+
+.card-head:hover .overlay {
+	display: block;
+}
+
+.card-content.porto{
+	text-align: center
+}
+
+.overlay{
+	display: none;
+	position: absolute;
+	background-color: rgba(2,2,2,.7);
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 200px;
+}
+
+#testi{
+	padding: 20px 0;
+	background-color: #eee;
+}
+
+.content{
+	padding: 20px 0;
+	text-align: center
+}
+
+.testi-img{
+	display: block;
+	width: 150px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+
+h4{
+	font-weight: 1000;
+}
+.jabatan {
+	color: #aaa
+}
+
+.quote::before {
+	content: '"';
+	font-family: 'Open Sans';
+	font-size: 36px;
+	color: #ccc;
+}
+.quote::after {
+	content: '"';
+	font-family: 'Open Sans';
+	font-size: 36px;
+	color: #ccc;
+}
+
+#tim {
+	padding: 20px 0;
+}
+
+
+.info-team p {
+	display: none;
+	padding: 20%;
+	color: #fff;
+	text-align: center;
+}
+
+.info-team:hover p {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 14px;
+	right: 14px;
+	bottom: -16px;
+	background-color: rgba(0,0,0,.7);
+}
+
+.img-tim{
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+
+#hubungi {
+	padding: 20px 0;
+	background-color: #eee;
+}
+#hubungi p {
+	text-align: center;
+	padding: 20px 0;
+}
+.hubungi-name {
+	color: #ccc;
+}
+
+#hubungi > .col-md-4::first{
+	border-left: 0;
+}
+#hubungi .col-md-4 {
+	text-align: center;
+	border-left: 1px solid #bbb;
+	margin-top: 10px;
+}
+
+#hubungi .container{
+	padding-top: 40px;
+}
+#hubungi .container  .row{
+	margin-top: 10px;
+}
+
+#hubungi textarea{
+	height: 200px;
+}
+
+#hubungi button{
+	text-align: center;
+	margin: 0 auto
+}
+
+footer{
+	background-color: #222;
+	padding: 20px;
+	color: #fff;
+}
+footer ul {
+	list-style-type: none;
+}
+
+footer ul li::before {
+	content: ">";
+	font-family: 'sans-serif';
+	color: #444;
+}
+footer ul li a {
+	color: #fff;
+}
+footer ul li a:hover {
+	color: #eee;
+	text-decoration: none
+}
+.btn-social {
+	background-color: #555;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 100%;
+	margin: 10px 0 0 10px: 
+}
+.btn-social:hover {
+	background-color: #23A434;
+	color: #fff;
+}
+
+h5{
+	font-weight: 200;
+}
+.footer-title {
+	border-bottom: 2px solid #444;
+	padding: 10px;
+	position: relative;
+}
+.footer-title::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 40px;
+	height: 2px;
+	background-color: #239532;
+}
+.footer-title-h {
+	border-left: 3px solid #23A350;
+	padding: 10px;
+}
+
+.info i {
+	color: #23A456;
+	font-size: 72px;
+}
+.card-icon i {
+	color: #fff;
+}
+
+#hubungi i{
+	font-size: 72px;
+	color: #222;
+	color: #23A433;
+}
+
+@media screen and (max-width: 768px){
+	ul.nav {
+		display: none;
+	}
+}

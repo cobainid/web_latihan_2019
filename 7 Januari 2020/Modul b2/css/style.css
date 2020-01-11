@@ -1,0 +1,377 @@
+body {
+	font-family: 'Candara';
+}
+
+.pd-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pd-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.pd-30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.pd-40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.pd-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.pds-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pds-20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.pds-30 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.pds-40 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.pds-50 {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.m-center {
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+	display: table;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.8);
+	z-index: 999999;
+}
+.modal__exit {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	color: #fff;
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.modal__prev{
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	font-size: 32px;
+}
+.modal__next{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	font-size: 32px;
+}
+
+
+
+
+.toTop:hover{
+	color: #fff;
+}
+.toTop{
+	text-decoration: none;
+	color: #fff;
+	background-color: #0CC962;
+	color: #fff;
+	padding: 10px 15px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	transition: .5s;
+	display: none;
+	opacity: 0;
+	transition: .5s;
+}
+
+.showTop {
+	display: block;
+	opacity: 1;
+	transition: .5s;
+}
+
+.navbar {
+	font-size: 18px;
+	font-weight: bold;
+	transition: .5s;
+}
+.color-green {
+	background-color: #f4f8fb;
+	transition: .5s;
+}
+.navbar.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+.navbar .nav {
+	padding: 10px;
+}
+
+.navbar .nav .nav-item {
+	padding: 5px 20px;
+}
+.navbar .nav .nav-item .nav-link {
+	color: #222;
+}
+
+.navbar .nav .nav-item:last-child {
+	margin-left: 1rem;
+	background-color: #0CC962;
+	border-radius: 40px;
+}
+
+.navbar .nav .nav-item:last-child:hover {
+	box-shadow: 0 2px 5px #aaa;
+}
+.navbar .nav .nav-item:last-child .nav-link {
+	color: #fff;
+}
+
+header,section {
+	min-height: 100vh;
+}
+
+header {
+	background-image: url('../assets/hero-bg.png');
+	background-attachment: fixed;
+	background-size: cover; 
+}
+
+h2.title {
+	font-size: 58px;
+	font-family: 'Candara';
+	font-weight: bold;
+}
+h3.sec__title {
+	font-size: 42px;
+	font-family: 'Candara';
+	padding: 10px 150px;
+	font-weight: bold;
+}
+.btn {
+	border: 0;
+	color: #fff;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0;
+	margin-bottom: 12px;
+}
+.btn.btnku-primary {
+	background-color: #0CC962;
+}
+.btn.btnku-secondary {
+	background: #fff;
+	color: #0CC962;
+}
+
+.btn.btnku-primary:hover{
+	color: #fff;
+	background-color: #0CDA62;
+	box-shadow: 0 0 2px #aaa;
+}
+.btn.btnku-secondary:hover {
+	color: #fff;
+	background-color: #1585FF;
+	box-shadow: 0 0 2px #aaa;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.fs-18 {
+	font-size: 18px;
+}
+
+.features__title {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 30px 5px 10px;
+	color: #444;
+	display: block;
+	text-transform: uppercase;
+}
+
+
+h3.bor__title {
+	padding: 20px 0;
+	position: relative;
+	font-weight: bold;
+	font-size: 38px;
+	color: #333;
+}
+
+.text-grey {
+	color: #aaa;
+}
+.upper {
+	text-transform: uppercase;
+}
+p.sec__desc {
+	color: #bbb;
+}
+
+h3.bor__title::after {
+	content: '';
+	height: 3px;
+	width: 70px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #0CC962; 
+}
+
+
+.bg-black {
+	background-color: #222;
+}
+
+.title__promote {
+	font-size: 32px;
+	color: #fff;
+	font-family: 'Candara';
+}
+
+.services__box:hover .icon__container{
+	background-color: #0CC962;
+	/*border-color: #fff;*/
+	color: #fff;
+}
+
+.bordered__dashed {
+	border-top: 2px dashed #aaa;
+}
+
+.contact_title {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+
+
+.icon__container {
+	border: 2px solid #0CC962;
+	border-radius: 100%;
+	padding: 15px 15px;
+	text-align: center;
+	align-content: middle;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	font-size: 32px;
+	color: #0CC962;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0CC962
+}
+a{
+	color: #0CC962;
+}
+
+
+.form-control {
+	border-radius: 0;
+	padding: 25px;
+}
+.form-control:focus {
+	border-color: #0CC962;
+}
+
+.covered__bottom {
+	background-image: url('../assets/call-bg.png');
+	background-attachment: cover;
+}
+.without-list {
+	list-style-type: none;
+	padding: 0;
+}
+.footer_ul .nav-item {
+	display: inline-block;
+}
+.fl-right{
+	float: right;
+}
+
+footer {
+	background-color: #f4f8fb;
+}
+.fs-38 {
+	font-size: 38px;
+}
+.btn-toggle:hover {
+	color: #0CCA62;
+}
+.btn-toggle {
+	display: none;
+	background-color: #f4f8fb;
+	border: 1px solid #0CC962;
+	color: #0CC962;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

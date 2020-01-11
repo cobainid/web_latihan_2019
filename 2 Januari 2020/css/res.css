@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px){
+	body {
+		font-size: 12px;
+	}
+	.cat {
+		padding-inline-start: 0;
+	}
+	.navbar img {
+		max-height: 55px;
+	}
+	.nav {
+		display: none;
+	}
+	#cart p {
+		display: none;
+	}
+	.navbar {
+		background-color: #eee;
+	}
+	.navbar form {
+		display: none;
+	}
+	.cat-item .a-cat {
+		font-size: 14px;
+	}
+	.prod-item img {
+		top: 0;
+		margin: 0 auto 10px;
+		text-align: center;
+	}
+	.slider-content {
+		width: 100%;
+	}
+
+	#team .text {
+		width: 100%;
+	}
+	.blue-text,.blue-dark-txt {
+		font-size: 24px;
+	}
+}

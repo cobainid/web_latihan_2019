@@ -1,0 +1,9 @@
+@media only screen and (max-width: 768px){
+	.nav {
+		display: none;
+	}
+	.product-discount {
+		/*font-size: 16px;*/
+		display: block;
+	}
+}

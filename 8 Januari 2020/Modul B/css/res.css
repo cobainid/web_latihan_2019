@@ -1,0 +1,64 @@
+@media only screen and (max-width: 768px){
+	.nav {
+		display: none;
+	}
+
+	.btn-toggle:hover {
+		color: #fff;
+		background-color: #45A455;
+		transition: .5s;
+	}
+	.btn-toggle {
+		display: block;
+		color: #fff;
+		border-radius: 5px;
+		border: 1px solid #fff;
+	}
+
+	.nav {
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 99;
+		padding: 20px;
+		max-width: 400px;
+		text-align: center;
+		background-color: #222;
+	}
+
+	.btn-toggle:focus ~ .nav,.nav:hover {
+		display: block;
+	}
+
+
+
+	.pd-md-10 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.pd-md-20 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.pd-md-30 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.pd-md-40 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.pd-md-50 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.trans-md-2rem{
+		transform:  translate(0,0);
+	}
+	.pull-md-right {
+		/*float: left;*/
+		display: block;
+	}
+}

@@ -1,0 +1,33 @@
+@media only screen and (max-width: 768px){
+	.navbar {
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 10px;
+		background-color: #fafafa;
+	}
+	.nav {
+		display: none;
+	}
+
+	.pembuka-title {
+		font-size: 24px;
+	}
+
+	.pembuka-desc {
+		width: 100%
+	}
+	.trans-40,.trans-m40 {
+		transform: translate(0,0);
+	}
+
+	.border-uwu {
+		border-right: 0;
+		border-bottom: 1px solid #fff;
+	}
+	.box-trans {
+		width: 80%;
+	}
+}

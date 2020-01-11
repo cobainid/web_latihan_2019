@@ -1,0 +1,67 @@
+@media only screen and (max-width: 768px){
+
+	ul.nav {
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 10%;
+		background-color: #222;
+	}
+	ul.nav li.nav-item {
+		display: block;
+	}
+	.toggle-btn {
+		display: block;
+	}
+	.toggle-btn:focus+ul.nav,ul.nav:hover {
+		display: block;
+	}
+	.slider-text{
+		width: 50%
+	}
+
+.form-subs{
+	width: 40%;
+}
+}
+
+@media only screen and (max-width: 508px){
+
+.form-subs{
+	width: 60%;
+}
+.inp-subs{
+	width: 70%;
+}
+
+.slider-text {
+	width: 80%;
+	text-align: center;
+}
+
+}
+@media only screen and (max-width: 320px){
+
+.bal-mendal{
+	width: 50px;
+	height: 50px;
+}
+.form-subs{
+	width: 90%;
+}
+.inp-subs{
+	width: 80%;
+}
+
+}
+@media only screen and (max-width: 425px){
+
+
+footer ul{
+	padding: 10px;
+}
+
+#tentang p,#pendaftaran p {
+	width: 80%;;
+}
+}
