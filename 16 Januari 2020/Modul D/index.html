@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<style type="text/css">
+		.count {
+			background: #ff0000;
+			padding: 30px;
+			display: inline-block;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="count">2000</div>
+	<div class="count">10000</div>
+	<div class="count">500</div>
+
+
+
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$('.count').each(function() {
+			$(this).prop('tambah',0).animate({
+				tambah: $(this).text()
+			},{
+				duration: 1000,
+				easing: 'swing',
+				step: (num) => {
+					$(this).text(Math.ceil(num))
+				}
+			})
+		})
+	</script>
+
+
+
+</body>
+
+
+</html>

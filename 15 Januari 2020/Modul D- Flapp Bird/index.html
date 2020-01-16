@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href=""> -->
+</head>
+<body>
+	<canvas width="400" height="600" style="display: block;margin: auto;" id="canvas"></canvas>
+
+
+	<!-- <img src="assets/sprites/pipe-red.png" style="transform: rotate(180deg);"> -->
+
+	<script type="text/javascript">
+		// declare
+		let c = document.getElementById('canvas'),
+			ctx = c.getContext('2d');
+
+
+		let widthGame = 400,heightGame = 600;
+
+		let intervalSpeed = 100;
+
+		let imgBGDay = new Image(),image = new Image();
+		imgBGDay.src = 'assets/sprites/background-day.png';
+		// , imgBirdRed = new Image();
+		// imgBirdRed = 'assets/sprites/imgBirdRed';
+
+		let imgRedBird = [
+		'assets/sprites/redbird-downflap.png',
+		'assets/sprites/redbird-midflap.png',
+		'assets/sprites/redbird-upflap.png'
+		];
+
+
+
+		let bird = {
+			x: 30,
+			y: c.height/2,
+			status: 'live'
+		};
+
+
+
+
+
+
+		// setUp
+		c.width = widthGame,c.height = heightGame;
+
+		tinggiTerbang = 20;
+		gravitySpeed = tinggiTerbang/5;
+		spaceObs = 200;
+		jarakAntarObstacle = 50;
+
+
+
+
+
+
+		// jarak antara obstacle atas dan bawah tetap
+		// langkah-langkah
+		// tentukan tinggi screen
+		// buat sebuah angka random
+		// jika angka random lebih besar dari tinggi screen generate ulang angka random
+		// jika angka random dikurangi jarak antar obstacle kurang dari nol maka tambahkan
+		// jika angka random dikurangi jarak antar obstacle lebih besar dari nol maka kurangkan
+		// angka0 = hasil nya
+		// angka1 = angka random
+		// cari angka tertinggi
+		// y0 = angka terendah
+		// y1 = angka tertinggi
+
+		let obstacle = [];
+
+
+		let imgObsAtas = new Image(),imgObsBawah = new Image();
+		imgObsAtas.src = 'assets/sprites/pipe-red.png',imgObsBawah.src = 'assets/sprites/pipe-red.png';
+		// console.log(imgObsAtas);
+		// imgObsAtas.style.transform = 'rotate(180deg)';
+		// console.log(imgObsAtas)
+
+
+		for(i=0;i<4;i++){
+			let ts = c.height; //tinggi screen
+			let gettingNum = true;
+			let rand = 0;
+			// wakwau = 0;
+			while(gettingNum){
+				rand = Math.ceil(Math.random()*1000);
+
+				if(rand < ts){
+					if(rand > ts/5){
+						gettingNum = false;
+					}
+				}
+			}
+			if((rand - spaceObs) < 0){
+				hasil = rand+spaceObs;
+				angka0 = rand;
+				angka1 = hasil;
+				if(angka0 < angka1){
+					obstacle[i] = {
+						y0: angka0,
+						y1: angka1,
+						x: c.width*(1+i),
+						inScr: true
+					}
+				}else{
+					obstacle[i] = {
+						y0: angka1,
+						y1: angka0,
+						x: c.width*(1+i),
+						inScr: true
+					}
+				}
+			}else{
+				hasil = rand-spaceObs;
+				angka0 = rand;
+				angka1 = hasil;
+				if(angka0 < angka1){
+					obstacle[i] = {
+						y0: angka0,
+						y1: angka1,
+						x: c.width*(1+i),
+						inScr: true
+					}
+				}else{
+					obstacle[i] = {
+						y0: angka1,
+						y1: angka0,
+						x: c.width*(1+i),
+						inScr: true
+					}
+				}
+			}
+		}
+
+		// console.log(obstacle)
+
+		let drawObstacle = function() {
+
+			if(obstacle[0].inScr == false && obstacle[1].inScr == false && obstacle[2].inScr == false && obstacle[3].inScr == false){
+				for(i=0;i<4;i++){
+					let ts = c.height; //tinggi screen
+					let gettingNum = true;
+					let rand = 0;
+					// wakwau = 0;
+					while(gettingNum){
+						rand = Math.ceil(Math.random()*1000);
+
+						if(rand < ts){
+							if(rand > ts/5){
+								gettingNum = false;
+							}
+						}
+					}
+					if((rand - spaceObs) < 0){
+						hasil = rand+spaceObs;
+						angka0 = rand;
+						angka1 = hasil;
+						if(angka0 < angka1){
+							obstacle[i] = {
+								y0: angka0,
+								y1: angka1,
+								x: c.width*(1+i),
+								inScr: true
+							}
+						}else{
+							obstacle[i] = {
+								y0: angka1,
+								y1: angka0,
+								x: c.width*(1+i),
+								inScr: true
+							}
+						}
+					}else{
+						hasil = rand-spaceObs;
+						angka0 = rand;
+						angka1 = hasil;
+						if(angka0 < angka1){
+							obstacle[i] = {
+								y0: angka0,
+								y1: angka1,
+								x: c.width*(1+i),
+								inScr: true
+							}
+						}else{
+							obstacle[i] = {
+								y0: angka1,
+								y1: angka0,
+								x: c.width*(1+i),
+								inScr: true
+							}
+						}
+					}
+				}
+			}
+
+			for(i=0;i<obstacle.length;i++){
+				console.log(obstacle[i]);
+
+
+				ctx.drawImage(imgObsBawah, 0, 0,
+					imgObsBawah.width, imgObsBawah.height,
+					0, obstacle[0].y1,
+					imgObsBawah.width, c.height);
+				
+				// ctx.save();
+				
+
+				ctx.translate(0,-(jarakAntarObstacle))
+				ctx.scale(1,-1); 
+				ctx.drawImage(imgObsAtas, 0, 0,
+					imgObsAtas.width, imgObsAtas.height,
+					0, -imgObsAtas.height,
+					imgObsAtas.width, obstacle[0].y0);
+				
+				ctx.restore();
+				
+
+				obstacle[i].x -= 12;
+				if(obstacle[i].x < 0){
+					obstacle[i].inScr = false;
+				}
+			}
+
+		}
+
+
+
+
+
+
+
+
+		let terbang = function(){
+			if(bird.y-tinggiTerbang > 0){
+				bird.y -= tinggiTerbang;
+			}
+		}
+
+		let imageTanah = new Image();
+		imageTanah.src = 'assets/sprites/base.png';
+		let drawTanah = function(){
+			// ctx.rotate(180);
+			ctx.drawImage(imageTanah,0,0,imageTanah.width,imageTanah.height,-Math.abs(bgJalan),c.height-30,c.width,c.height);
+			// ctx.rotate(-180);
+			ctx.drawImage(imageTanah,0,0,imageTanah.width,imageTanah.height,c.width-bgJalan,c.height-30,c.width,c.height);
+		}
+
+
+
+
+		let tempSayap = 'up';
+		let sayap = 'up';
+		// 0 = down , 1 = mid  2 =up
+		let drawBird = function (){
+			if (sayap == 'up'){
+				image.src = imgRedBird[2];
+				ctx.drawImage(image,0,0,image.width,image.height,bird.x,bird.y,image.width,image.height);
+				tempSayap = 'up';
+				sayap = 'middle';
+			}else if(sayap == 'middle'){
+				image.src = imgRedBird[2];
+				ctx.drawImage(image,0,0,image.width,image.height,bird.x,bird.y,image.width,image.height);
+				
+				if(tempSayap == 'up'){
+					sayap = 'down';
+				}else if(tempSayap == 'down'){
+					sayap = 'up';
+				}
+			}else if(sayap == 'down'){
+				image.src = imgRedBird[0];
+				ctx.drawImage(image,0,0,image.width,image.height,bird.x,bird.y,image.width,image.height);
+				tempSayap = 'down';
+				sayap = 'middle';
+			}
+
+			bird.y += gravitySpeed;
+			if(bird.y > c.height+10){
+				bird.y = -10;
+			}
+
+		}
+
+
+
+		bgJalan = 0;
+		let drawBackground = function(){
+
+			ctx.drawImage(imgBGDay,0,0,imgBGDay.width,imgBGDay.height,-Math.abs(bgJalan),0,c.width,c.height);
+			ctx.drawImage(imgBGDay,0,0,imgBGDay.width,imgBGDay.height,c.width-bgJalan,0,c.width,c.height);
+
+			bgJalan += 10;
+			if(bgJalan > c.width-10){
+				bgJalan = 0;
+			}
+			// console.log(image.width);
+			// console.log(image.height);
+		}
+
+
+		let draw = function(){
+			ctx.clearRect(0,0,c.width,c.height);
+			drawBackground();
+			drawTanah();
+			// drawBird();
+			drawObstacle();
+		}
+
+
+
+		document.addEventListener('keydown',key =>{
+			switch(key.code) {
+				case 'Space':
+					terbang();
+					break;
+				default:
+					break;
+			}
+		})
+
+		let init = function(){
+			app = setInterval(()=>{
+				draw();
+			},intervalSpeed);
+		}
+
+
+		init();
+
+
+
+	</script>
+
+</body>
+</html>

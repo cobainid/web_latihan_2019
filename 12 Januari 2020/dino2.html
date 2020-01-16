@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dino</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+<body>
+	<canvas id="canvas" width="900" height="500"></canvas>
+	<script type="text/javascript">
+		let c = document.getElementById('canvas'),
+			ctx = c.getContext('2d');
+
+		let isJumping =false;
+
+		let speed = 90;
+		let awan = [], speedAwan = 10, speedTanah = 30, obstacleKeluar = 800, speedObstacle= 20;
+		let height = canvas.height, width =canvas.width;
+
+
+		let tinggiLompatan = 30,kecepatanTurun = 1.5,kecepatanNaik=2.5;
+
+		let obstacle = [];
+
+		let nabraklurd = false;
+
+
+
+
+
+
+		let timeNdengkluk = 0;
+
+		let image = new Image();
+		image.src = "assets/sprite.png";
+
+
+		let dino = {
+			y: (height/2)-40,
+			x: 20
+		} 
+		let kakiKanan = true;
+
+		let ndengkluk = true;
+
+
+		// belum gerak = 719
+		// kaki kanan = 763 => 48
+		// kaki kiri = 807 => 48
+		// ndengkluk = 942 => 58
+		// ndengkluk 2 = 998 => 58
+
+		// loncat  = 895 
+
+		let pad = "000000";
+
+		let score = 0;
+
+		jalan = 0;
+
+		isNaik= true,naik = 0;
+
+
+		for (i=0;i<4;i++) {
+			awan[i] = {
+				x: (Math.ceil(Math.random()*1000))+60,
+				y: (Math.ceil(Math.random()*10000))+5,
+				// inScr: true
+			}
+		}
+
+
+		for(i=0;i<5;i++){
+			obstacle[i] = {
+				x: (Math.ceil(Math.random()*10000))+120,
+				y: height+50,
+				width: 25,
+				height: 50+(Math.ceil(Math.random()*100))
+			} 
+			// if(obstacle[i].height < 20){
+			// 	obstacle[i].height = 5+(Math.ceil(Math.random()*100));
+			// }
+		}
+
+
+
+
+
+
+
+
+
+		// let tempScore = ;
+
+		let drawScore = function(){
+			scrToStr = padding(score,6).toString();
+			console.log(scrToStr)
+			for(i=0;i<scrToStr.length;i++) {
+				console.log(scrToStr.charAt(i))
+				ctx.drawImage(image,485+(parseInt(scrToStr.charAt(i))*10),0,8,15,0+(14*i),0,14,20);
+			}
+
+			score += 1;
+
+			// ctx.drawImage(image,495,0,8,15,0,0,14,20);  => 1
+			// ctx.drawImage(image,505,0,8,15,0,0,14,20); => 2
+			// console.log(tempScore)
+		}
+
+
+		let drawTanah = function(){
+			// console.log(jalan);
+
+			ctx.drawImage(image,jalan,55,1200,18,0,height/2,1200,18);
+			ctx.drawImage(image,jalan-1200,55,1200,18,0,height/2,1200,18);
+			if(jalan > 1500){
+				jalan=0;
+			}
+			if(isJumping){
+				jalan += speedTanah/2;
+			}else{
+				jalan += speedTanah;
+			}
+		}
+
+		let drawDino = function(){
+
+			// ctx.fillStyle = 'red';
+			// ctx.fillRect(dino.x,dino.y,46,50);
+			// ctx.drawImage(image,895,0,48,50,dino.x,dino.y,48,50);
+			if(isJumping){
+				ctx.drawImage(image,897,0,44,50,dino.x,dino.y,46,50);
+			}else{
+				if (ndengkluk){
+					if(kakiKanan){
+						ctx.drawImage(image,940,0,60,50,dino.x,dino.y,60,50);
+						kakiKanan =false;
+					}else{
+						ctx.drawImage(image,999,0,60,50,dino.x,dino.y,60,50);
+						kakiKanan =true;
+					}
+					timeNdengkluk += 1;
+					if(timeNdengkluk > 3){
+						ndengkluk = false;
+						timeNdengkluk=0;
+					}
+					// console.log(timeNdengkluk);
+				} 
+				else {
+					if(kakiKanan){
+						ctx.drawImage(image,809,0,44,50,dino.x,dino.y,44,50);
+						kakiKanan = false;
+					} else {
+						ctx.drawImage(image,765,0,44,50,dino.x,dino.y,44,50);
+						kakiKanan = true;
+					}
+				}
+			}
+		}
+
+
+
+		let jump = function(){
+			// console.log(naik);
+			// console.log(isNaik);
+			// console.log(isJumping);
+			if(isNaik){
+				if(naik < 10){
+					dino.y -= tinggiLompatan;
+					naik += kecepatanNaik;
+				}else{
+					isNaik = false;
+				}
+			}else{
+				if(naik > 0){
+					dino.y += tinggiLompatan/2;
+					naik -= kecepatanNaik/2;
+				}else{
+					isJumping = false;
+					isNaik = true;
+				}
+			}
+		}
+
+
+		let drawAwan = function(){
+			for(i=0;i<awan.length;i++){
+				ctx.drawImage(image,88,0,48,18,awan[i].x,awan[i].y,60,32);
+				awan[i].x -= speedAwan;
+				if(awan[i].x < 0){
+					awan[i] = {
+						x: (Math.ceil(Math.random()*1000))+600,
+						y: (Math.ceil(Math.random()*100))+5,
+					};
+				}
+			}
+		}
+
+
+
+		let drawObstacle = function(){
+			for(i=0;i<obstacle.length;i++){
+				// console.log((height-obstacle[i].width)/2-((obstacle[i].height/2+20)/2)obstacle[i].height/2+20);
+				if( (obstacle[i].x-obstacle[i].width <= dino.x && obstacle[i].x+(obstacle[i].width/2) >= dino.x) &&
+					((height-obstacle[i].width)/2-((obstacle[i].height/2+20)/2)-obstacle[i].height/2+20 <= dino.y && ((height-obstacle[i].width)/2-((obstacle[i].height/2+20)/2)-obstacle[i].height/2+20)+obstacle[i].height >= dino.y)
+					){
+					nabraklurd = true;
+				}
+				// 225
+				// ctx.fillStyle = 'blue';
+				// ctx.fillRect(obstacle[i].x,(height-obstacle[i].width)/2-((obstacle[i].height/2+20)/2),obstacle[i].width,obstacle[i].height/2+20);
+				// ctx.drawImage(image,225,0,20,48,obstacle[i].x,(height+obstacle[i].y)/2,obstacle[i].width,obstacle[i].height/2+20);
+				ctx.drawImage(image,225,0,20,48,obstacle[i].x,(height-obstacle[i].width)/2-((obstacle[i].height/2+20)/2),obstacle[i].width,obstacle[i].height/2+20);
+				
+				obstacle[i].x -= speedObstacle;
+
+				if(obstacle[i].x < -15){
+					obstacle[i] = {
+						x: (Math.ceil(Math.random()*1000))+obstacleKeluar,
+						y: height,
+						width: 25,
+						height: 40+(Math.ceil(Math.random()*100))
+					}
+				}
+			}
+		}
+
+
+		function padding(n, width, z) {
+		  z = z || '0';
+		  n = n + '';
+		  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+		}
+
+
+		let draw = function(){
+
+			// console.log()
+			// console.log(padding(score,6))
+
+			// score ++;
+
+
+
+
+
+
+
+			ctx.clearRect(0,0,2400,2400);
+			drawDino();
+			drawScore();
+			drawTanah();
+			drawAwan();
+			drawObstacle();
+			if(isJumping == true){
+				jump();
+			}
+			if(nabraklurd){
+				clearInterval(app1);
+			}
+		}
+
+		document.addEventListener('keydown',(key) => {
+			// console.log(key.code);
+			switch(key.code){
+				case 'ArrowUp':
+					isJumping = true;
+					break;
+				case 'Space':
+					isJumping =true;
+					break;
+				case 'ArrowDown':
+					// console.log("uwu");
+					ndengkluk = true;
+					break;
+					default: 
+					break;
+			}
+		});
+
+		let init = function () {
+			app1 = setInterval(function(){
+				draw();
+			},speed);
+		}
+
+		init();
+
+	</script>
+</body>
+</html>

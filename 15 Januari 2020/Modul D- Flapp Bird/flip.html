@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Test
+	</title>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript">
+		let c= document.getElementById('canvas'),
+			ctx = c.getContext('2d');
+
+		c.width = 400, c.height = 400;
+
+		let img = new Image();
+		img.src = 'assets/sprites/pipe-red.png';
+		
+
+
+		let drawPipe = () =>{
+			// ctx.translateY(-(c.height/3));
+			ctx.drawImage(img,0,0,img.width,img.height,0,0,img.width,c.height);
+			ctx.translate(0,0);
+			ctx.scale(-1,-1);
+			ctx.drawImage(img,0,0,img.width,img.height,-(img.height),-(c.height),img.width,c.height);
+			ctx.scale(1,1);
+		}
+		
+		let draw = () => {
+			ctx.clearRect(0,0,c.width,c.height);
+			drawPipe();
+		}
+
+
+		let init = () => {
+			app = setInterval(() => {
+				draw();
+			},100)
+		}
+
+		init()
+
+
+	</script>
+</body>
+</html>
