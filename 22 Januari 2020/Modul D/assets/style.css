@@ -1,0 +1,49 @@
+#canvas {
+	width: 600px;
+	height: 600px;
+	background-image: url('back.jpg');
+	position: relative;
+}
+
+.bannerMulai,
+.bannerUlangi {
+	position: absolute;
+	top: 200px;
+	left: 180px;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+html {
+	font-family: Prompt
+}
+h1 {
+	font-family: "Segoe UI"; 
+}
+
+.bannerUlangi {
+	display: none;
+}
+
+
+#btnUlangi{
+	display: inline-block;;
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #222;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#btnMulai {
+	color: #f00;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.board {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	z-index: 1;
+	color: #fff;
+}

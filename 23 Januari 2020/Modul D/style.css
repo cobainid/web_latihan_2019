@@ -1,0 +1,42 @@
+#canvas {
+	width: 600px;
+	height: 600px;
+	background-image: url('assets/back.jpg');
+}
+
+.board {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.bannerMulai,
+.bannerUlangi {
+	position: absolute;
+	top: 200px;
+	left: 180px;
+	text-align: center;
+}
+.bannerUlangi {
+	display: none;
+}
+
+#btnMulai {
+	cursor: pointer;
+	color: #f00;
+	font-size: 18px;
+	font-weight: bold;
+}
+#btnUlangi {
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+
+html {
+	font-family: 'Prompt';
+	font-size: 12px;
+	color: #fff;
+}

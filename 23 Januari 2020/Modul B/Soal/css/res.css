@@ -1,0 +1,30 @@
+@media only screen and (max-width:  768px) {
+	p.sec__desc {
+		width: 100%;
+	}
+	.nav {
+		display: none;
+	}
+	.btn-toggle{
+		display: block;
+	}
+	.btn-toggle:focus +.nav,.nav:hover {
+		display: block;
+		position: absolute;
+		top: 100%;
+		right: 10%;
+		padding: 20px 5px;
+		background-color: rgba(0,0,0,.8);
+	}
+	.testi__box {
+		width: 100%
+	}
+	.kontak__box {
+		border: 0;
+	}
+	.carousel__content {
+		left: 10%;
+		width: 80%;
+		/*right: 10%;*/
+	}
+}

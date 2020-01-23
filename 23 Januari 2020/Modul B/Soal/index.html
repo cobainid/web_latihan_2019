@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bro Design</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/res.css">
+</head>
+<body>
+
+	<a href="#header" class="toTop">
+		<i class="fa fa-arrow-up"></i>
+	</a>
+
+	<header id="header">
+		<nav class="navbar">
+			<div class="container">
+				<span class="logo"> Bro Design</span>
+				<button class="btn btn-toggle"><i class="fa fa-bars"></i></button>
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="#header" class="nav-link">Beranda</a>
+					</li>
+					<li class="nav-item">
+						<a href="#about" class="nav-link">Tentang Kami</a>
+					</li>
+					<li class="nav-item">
+						<a href="#portfolio" class="nav-link">PortFolio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#tim" class="nav-link">Tim Kami</a>
+					</li>
+					<li class="nav-item">
+						<a href="#kontak" class="nav-link">Kontak Kami</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="carousel slide" id="mycr" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#mycr" data-slide-to="0" class="active"></li>
+				<li data-target="#mycr" data-slide-to="1"></li>
+				<li data-target="#mycr" data-slide-to="2"></li>
+				<li data-target="#mycr" data-slide-to="3"></li>
+				<li data-target="#mycr" data-slide-to="4"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="carousel__box">
+						<img src="img/slider/1_batik.jpg" class="carousel__slider">
+						<div class="carousel__content">
+							<p class="carousel__title">Portofolio: Bank Indonesia</p>
+							<p class="carousel__desc">
+								Bank Indonesia KPw DKI Jakarta ingin membuat media promosi untuk memamerkan produk lokal mereka seperti seperti koleksi kuno Batik Betawi, kebaya encim dan aksesori etnik yang dibuat oleh pengrajin lokal.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel__box">
+						<img src="img/slider/2_tea.jpg" class="carousel__slider">
+						<div class="carousel__content">
+							<p class="carousel__title">Portofolio: IniTeh Thai Tea</p>
+							<p class="carousel__desc">
+								Produk minuman ini terdiri dari dua varian, teh thai dan teh hijau. Produk ini memberikan beberapa permainan kata-kata di setiap sisi botol untuk memberikan kesan humor. Itu bisa dilihat dari nama produk itu sendiri.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel__box">
+						<img src="img/slider/3_cirebon.jpg" class="carousel__slider">
+						<div class="carousel__content">
+							<p class="carousel__title">Cirebon International Furniture Expo 2017</p>
+							<p class="carousel__desc">
+								Konsep dan desain brand untuk CIFEX 2017 atau Cirebon International Furniture Expo 2017.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel__box">
+						<img src="img/slider/4_grande.jpg" class="carousel__slider">
+						<div class="carousel__content">
+							<p class="carousel__title">Grande Valore</p>
+							<p class="carousel__desc">Sebagai salah satu Zona Ekonomi Khusus di Jawa Barat, Cikarang tumbuh menjadi tujuan utama untuk investasi industri asing, khususnya dari perusahaan besar Jepang. Terletak di pusat Kawasan Industri Jababeka di Cikarang, Grande Valore Hotel and Condominium akan menjawab permintaan ekspatriat Jepang untuk akomodasi premium.</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel__box">
+						<img src="img/slider/5_bubur.jpg" class="carousel__slider">
+						<div class="carousel__content">
+							<p class="carousel__title">Bubur Oyo</p>
+							<p class="carousel__desc">
+								Bubur Oyo membuat bubur ayam otentik dengan cara kuno dan menyajikannya dengan topping sebanyak yang Anda suka. Konsep rebranding memiliki desain yang sederhana namun ramah dengan jenis huruf bulat dan ikon, warna-warna cerah kuning cerah dan biru listrik untuk dengan mudah menarik semua pecinta makanan di luar sana.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#mycr" class="carousel-control-prev" data-slide="prev">
+				<i class="fa fa-arrow-left"></i>
+			</a>
+			<a href="#mycr" class="carousel-control-next" data-slide="next">
+				<i class="fa fa-arrow-right"></i>
+			</a>
+		</div>
+	</header>
+	
+	<div class="bawah__slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="bawah__slider__box">
+						<i class="fa fa-bookmark-o"></i>
+						<p class="bawah__slider__title">
+							Diskusikan
+						</p>
+						<p class="bawah__slider__desc">Diskusikan dengan kami kebutuhan desain anda, kami siap mendengar dan mencatat</p>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="bawah__slider__box">
+						<i class="fa fa-calendar-times-o"></i>
+						<p class="bawah__slider__title">
+							Waktu
+						</p>
+						<p class="bawah__slider__desc">Beri kami waktu, desain anda akan kami rancang sedemikian rupa sesuai waktu kesepakatan.</p>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="bawah__slider__box">
+						<i class="fa fa-heart-o"></i>
+						<p class="bawah__slider__title">
+							Hasil Desain
+						</p>
+						<p class="bawah__slider__desc">Hasil desain yang memuaskan klien adalah tujuan utama kami dalam setiap rancangan</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="about">
+		<div class="container py-5">
+			<div class="py-3"></div>
+			<h2 class="sec__title">Tentang Kami</h2>
+			<p class="sec__desc">
+				BroDesign adalah perusahaan Jasa Desain Grafis yang berbasis di Surabaya. Berdiri sejak 2012 dan sudah melayani ribuan klien dalam skala Nasional maupun Internasional.
+			</p>
+			<div class="py-3"></div>
+			<div class="row justify-content-center">
+				<div class="col-md-4 mb-4">
+					<div class="about__box">
+						<div class="about__header">
+							<img src="img/about-layanan.jpg" class="about__image">
+							<i class="fa fa-tachometer"></i>
+						</div>
+						<div class="about__content">
+							<p class="about__title">Layanan Tepat Waktu</p>
+							<p class="about__desc">Bagi kami, ketepatan waktu adalah janji yang harus dipenuhi dengan klien. Kami pastikan desain kami hadir sesuai dengan waktu yang telah disepakati antara kedua belah pihak.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="about__box">
+						<div class="about__header">
+							<img src="img/about-konsep.jpg" class="about__image">
+							<i class="fa fa-tachometer"></i>
+						</div>
+						<div class="about__content">
+							<p class="about__title">Konsep Kuat</p>
+							<p class="about__desc">Konsep Desain yang kami kuat selalu menunjukkan sebuah konsep yang kuat dan pada akhirnya akan menghasilkan kualitas desain dan produk yang dapat diandalkan.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="about__box">
+						<div class="about__header">
+							<img src="img/about-hasil.jpg" class="about__image">
+							<i class="fa fa-tachometer"></i>
+						</div>
+						<div class="about__content">
+							<p class="about__title">Hasil Optimal</p>
+							<p class="about__desc">Hasil rancangan dan hasil akhir yang diperoleh selalu kami pastikan sama, sehingga kepuasan dari klien dapat kami jaga secara terus menerus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-grey" id="portfolio">
+		<div class="container py-5">
+			<h2 class="sec__title">Portfolio</h2>
+			<div class="filter__class">
+				<button class="btn btn-success mr-2 mb-1" onclick="showAll()"> Semua</button>
+				<button class="btn btn-default mr-2 mb-1" onclick="sortBy('brand')">Identitas Brand</button>
+				<button class="btn btn-default mr-2 mb-1" onclick="sortBy('cetak')">Desain Cetak</button>
+				<button class="btn btn-default mr-2 mb-1" onclick="sortBy('kemasan')">Desain Kemasan</button>
+			</div>
+			<div class="py-4"></div>
+			<div class="row" id="product">
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-grey" id="testi">
+		<div class="container py-5">
+			<h2 class="sec__title">Testimoni </h2>
+			<div class="py-3"></div>
+			<div class="carousel slide" id="testiuwu" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#testiuwu" data-slide-to="0" class="active"></li>
+					<li data-target="#testiuwu" data-slide-to="1"></li>
+					<li data-target="#testiuwu" data-slide-to="2"></li>
+					<li data-target="#testiuwu" data-slide-to="3"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="testi__box">
+							<img src="img/testimonial-1.png">
+							<div class="testi__content">
+								<p class="name">Devi Andini</p>
+								<p class="job">Ceo, Founder Solusitustop</p>
+								<p class="quote">Tim BroDesign sangat enak untuk diajak berdiskusi, sehingga apa yang ada dalam benak kami dapat divisualisasikan dengan baik oleh tim BroDesign</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="testi__box">
+							<img src="img/testimonial-2.png">
+							<div class="testi__content">
+								<p class="name">Aulia Rahma</p>
+								<p class="job">Beauty Ambassador</p>
+								<p class="quote">Sebagai beauty ambassador, saya sering kali memerlukan tambahan desain untuk menunjang publikasi saya agar mendapat perhatian. BroDesign mampu memberikan solusi mewah dengan harga ekonomis</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="testi__box">
+							<img src="img/testimonial-3.png">
+							<div class="testi__content">
+								<p class="name">Hero Martono</p>
+								<p class="job">Entrepreneur</p>
+								<p class="quote">Terimakasih BroDesign, saya sangat puas dengan hasil desainnya. Butuh waktu yang cukup lama untuk berdiskusi, tapi tim BroDesign mau bersabar dengan permintaan kami</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="testi__box">
+							<img src="img/testimonial-4.jpg">
+							<div class="testi__content">
+								<p class="name">Arya Nugraha</p>
+								<p class="job">Manager BankKita</p>
+								<p class="quote">Saat perusahaan kami membutuhkan perubahan dalam hal komunikasi brand kami, BroDesign memberikan solusinya</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="tim">
+		<div class="container py-5">
+			<h2 class="sec__title">Tim Kami</h2>
+			<div class="py-3"></div>
+			<div class="row">
+				<div class="col-md-3 mb-4">
+					<div class="tim__box">
+						<img src="img/tim-1.png">
+						<p>Andi Budiman | Senior Designer</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="tim__box">
+						<img src="img/tim-2.png">
+						<p>Amanda Amalia | Brand Specialist</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="tim__box">
+						<img src="img/tim-3.png">
+						<p>Hendry Sinaga | Logo Designer Expert</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="tim__box">
+						<img src="img/tim-4.png">
+						<p>Aulia Putri Hapsari | Web Designer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="kontak" class="bg-grey">
+		<div class="container py-5">
+			<h2 class="sec__title">Hubungi Kami</h2>
+			<p class="sec__desc">Anda memiliki sejumlah pertanyaan atau hal-hal yang perlu anda diskusikan dengan kami terkait kebutuhan desain anda? Silahkan hubungi kami melalui form berikut ini</p>
+			<div class="py-4"></div>
+
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="kontak__box">
+						<i class="fa fa-map-marker"></i>
+						<p class="title">Alamat</p>
+						<p class="content">Jl. Jagir Etan Kulon No 101 Surabaya, JawaTimur Indonesia</p>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="kontak__box">
+						<i class="fa fa-phone"></i>
+						<p class="title">Nomor Telepon</p>
+						<p class="content">+62 813 3511 1153</p>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="kontak__box">
+						<i class="fa fa-envelope"></i>
+						<p class="title">Email</p>
+						<p class="content">sales@moderdesign.com</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="py-4"></div>
+
+			<form class="form">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" name="name" placeholder="Name ... " class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="email" name="Email" placeholder="Email ... " class="form-control">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" name="Subject" placeholder="Subject ... " class="form-control">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<textarea placeholder="Isi ... " class="form-control" style="height:200px"></textarea>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group text-center">
+							<button class="btn btn-success">Submit</button>
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container pt-5">
+			<div class="row">
+				<div class="col-md-3 mb-3">
+					<span class="logo">Bro Design</span>
+					<p class="desc__brand">percaya bahwa benih kreativitas hidup dalam setiap orang, untuk membuat dunia menjadi tempat yang lebih baik. Inilah sebabnya kami mulai bekerja dengan orang-orang yang melakukan pekerjaan dengan tujuan.</p>
+				</div>
+				<div class="col-md-3 mb-3">
+					<h3> Navigasi</h3>
+					<ul class="nav--foot">
+						<li>
+							<a href="#header" class="nav-link">Beranda</a>
+						</li>
+						<li>
+							<a href="#about" class="nav-link">Tentang Kami</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="nav-link">Portfolio</a>
+						</li>
+						<li>
+							<a href="#tim" class="nav-link">Tim Kami</a>
+						</li>
+						<li>
+							<a href="#kontak" class="nav-link">Hubungi Kami</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 mb-3">
+					<h3>Hubungi Kami</h3>
+					<p class="desc">Jl. Jagir Etan Kulon No 101 Surabaya <br>
+						SBY Jawatimur 60123
+						Indonesia
+						Telp: +62 813 3511 1153
+						Email: sales@brodesign.com</p>
+				</div>
+				<div class="col-md-3 mb-3">
+					<h3>Info Kami</h3>
+					<p class="desc">Silahkan masukkan alamat email anda untuk berlangganan informasi dari kami. Anda dapat berhenti sewaktu-waktu.</p>
+					<div class="py-1"></div>
+					<form class="subs">
+						<input type="email" name="aa" placeholder="Email .... ">
+						<button>Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		let prod = $('#product');
+
+		product = [];
+
+		comp("Bertiga" ,"Identitas Brand","img/portfolio/p1.jpg")
+		comp("Grande Valore","Desain Cetak","img/portfolio/p2.jpg")
+		comp("Sunkrisps","Desain Kemasan","img/portfolio/p3.jpg") 
+		comp("Orchidea","Desain Logo","img/portfolio/p4.jpg") 
+		comp("Batikita","Desain Logo","img/portfolio/p5.jpg") 
+		comp("Barata Brothers","Desain Cetak","img/portfolio/p6.jpg") 
+		comp("Initeh Thai","Desain Kemasan","img/portfolio/p7.jpg") 
+		comp("Hakone Onsen","Brand,Desain Icon","img/portfolio/p8.jpg")
+
+
+
+		function showAll(){
+			prod.empty()
+			product.forEach(d => {
+				mock = `
+					<div class="col-md-4 mb-3">
+						<div class="product__box">
+							<img src="`+d.img+`">
+							<div class="product__content">
+								<p class="title">`+d.name+`</p>
+								<p class="desc">`+d.cat+`</p>
+							</div>
+						</div>	
+					</div>`;
+				prod.append(mock);
+			})
+		}
+
+		function sortBy(uwu){
+			data = product.filter(r => {
+				return r.cat.toLowerCase().includes(uwu.toLowerCase());
+			})
+			prod.empty()
+			data.forEach(d => {
+				mock = `
+					<div class="col-md-4 mb-3">
+						<div class="product__box">
+							<img src="`+d.img+`">
+							<div class="product__content">
+								<p class="title">`+d.name+`</p>
+								<p class="desc">`+d.cat+`</p>
+							</div>
+						</div>	
+					</div>`;
+				prod.append(mock);
+			})
+		}
+
+		showAll();
+
+		function comp(name,cat,img){
+			product.push({name: name,
+									cat: cat,
+									img: img});
+		}
+	</script>
+</body>
+</html>
