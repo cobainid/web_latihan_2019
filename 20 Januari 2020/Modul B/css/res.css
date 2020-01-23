@@ -1,0 +1,34 @@
+@media only screen and (max-width: 768px){
+	.nav {
+		display: none;
+		position: absolute;
+		z-index: 100;
+		top: 100%;
+		color: #fff;
+		background-color: #adcafa;
+		/*left: 100%;*/
+	}
+	section .sec__desc {
+		width: 70%;
+	}
+	.btn-toggle {
+		display: block;
+	}
+
+	.btn-toggle:focus + .nav,.nav:hover {
+		display: block;
+	}
+	.slide__content {
+		width: 100%;
+		padding-top: 200px;
+	}
+}
+@media only screen and (max-width: 480px){
+	section .sec__desc {
+		width: 100%;
+	}
+	.product__box__content {
+		padding: 0 24px;
+	}
+
+}

@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jico</title>
+	<meta name="viewport" content="witdh=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/res.css">
+</head>
+<body>
+
+	<a href="#header" class="toTop"> <i class="fa fa-arrow-left"></i> Back To Top</a>
+
+	<div id="modal">
+		<div class="text-center">
+			<div class="modal__content">
+				<span class="modal__close" onclick="closeModal()">x</span>
+				<img src="" id="modal__img" class="img-fluid">
+			</div>
+		</div>
+	</div>
+
+	<header id="header">
+		<nav class="navbar">
+			<div class="container">
+				<img src="assets/logo.jpg" class="img-fluid animated flip">
+				<button class="btn btn-toggle"><i class="fa fa-bars"></i></button>
+				<ul class="nav animated slideInDown">
+					<li class="nav-item">
+						<a href="#header" class="nav-link">
+							Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link" onclick="event.preventDefault()">
+							Shop
+						</a>
+						<ul class="dropdown">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop meja
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop Kursi
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop Baju
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop Sepatu
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link" onclick="event.preventDefault()">
+							Pages
+						</a>
+						<ul class="dropdown">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop meja
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop Kursi
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop Baju
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									Shop Sepatu
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#products" class="nav-link">
+							Product
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" class="nav-link">
+							Contact
+						</a>
+					</li>
+				</ul>
+				<div class="d-sm-flex d-none d-md-flex">
+					<form class="form__nav">
+						<button> <i class="fa fa-search"></i></button>
+						<input type="q" name="" placeholder="search ... ">
+					</form>
+					<a href="#" class="ancor__header">
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+					<a href="#" class="ancor__header">
+						<i class="fas fa-star"></i>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<div class="carousel slide" data-ride="carousel" id="headercarousel">
+			<ul class="carousel-indicators">
+				<li data-target="#headercarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#headercarousel" data-slide-to="1"></li>
+				<li data-target="#headercarousel" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="header img1">
+						<div class="slide__content">
+							<p class="slide__title animated fadeIn delay-1s">
+								New Arrivals <br>
+								New Collection Flat 20% Off Only This Month</p>
+								<a href="#" class="btn btn-header animated bounce">Discover Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="header img2">
+						<div class="slide__content">
+							<p class="slide__title  animated fadeIn delay-1s">
+								New Arrivals <br>
+								New Collection Flat 20% Off Only This Month</p>
+								<a href="#" class="btn btn-header  animated bounce">Discover Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="header img3">
+						<div class="slide__content">
+							<p class="slide__title  animated fadeIn delay-1s">
+								New Arrivals <br>
+								New Collection Flat 20% Off Only This Month</p>
+								<a href="#" class="btn btn-header  animated bounce">Discover Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container py-4">
+		<div class="row animated zoomIn">
+			<div class="col-md-3 col-sm-6 col-xs-1 mb-3">
+				<div class="categories__box">
+					<a href="#">
+						<img src="assets/cat1.png" class="img-fluid">
+					</a>
+					<div class="categories__content">
+						<p  class="categories__title">
+							Chair
+						</p>
+						<p class="categories__item">
+							13 Item
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-1 mb-3">
+				<div class="categories__box">
+					<a href="#">
+						<img src="assets/cat2.png" class="img-fluid">
+					</a>
+					<div class="categories__content">
+						<p  class="categories__title">
+							Table
+						</p>
+						<p class="categories__item">
+							2 Item
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-1 mb-3">
+				<div class="categories__box">
+					<a href="#">
+						<img src="assets/cat3.png" class="img-fluid">
+					</a>
+					<div class="categories__content">
+						<p  class="categories__title">
+							Toys
+						</p>
+						<p class="categories__item">
+							100 Item
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-1 mb-3">
+				<div class="categories__box">
+					<a href="#">
+						<img src="assets/cat4.png" class="img-fluid">
+					</a>
+					<div class="categories__content">
+						<p  class="categories__title">
+							Make Up
+						</p>
+						<p class="categories__item">
+							0 Item
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="products">
+		<div class="container py-5">
+			<h3 class="sec__title">Featured Product</h3>
+			<p class="sec__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<div class="py-5"></div>
+			<div class="row animated slideInUp">
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<img src="assets/1.jpg" >
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Donec Ac Tempus</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 23,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<img src="assets/2.jpg" >
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Product 2</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 23,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-grey"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<img src="assets/3.jpg" >
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Product 3</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 32,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-grey"></i>
+									<i class="fa fa-star text-grey"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<img src="assets/4.jpg" >
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Product 4</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 100,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<img src="assets/5.jpg" >
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Donec Ac Tempus</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 3,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<img src="assets/6.jpg" >
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Lorem Ipsum</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 13,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<img src="assets/7.jpg" >
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Courgette</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 93,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-5">
+					<div class="product__box">
+						<div class="product__box__image">
+							<span class="label">NEW</span>
+							<span class="discount">-12%</span>
+							<img src="assets/8.jpg">
+							<div class="box__uwu">
+								<a href="#">Add to Cart</a>
+								<a href="#"> <i class="fa fa-star"></i></a>
+								<a href="#"> <i class="fa fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="product__box__content">
+							<p class="py-2">
+								<a href="#" class="product__title">Ano ne</a>	
+							</p>
+							<div class="d-flex justify-content-between">
+								<span class="product__harga d-flex-column">$ 41,0</span>
+								<a href="#" class="d-flex-column product__star"> 
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+									<i class="fa fa-star text-orange"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="overlay">
+		<div class="container py-3">
+			<div class="row">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-6">
+					<div class="overlay__content">
+						<h3 class="overlay__content__title animated flip">Big Sale Up To <br> <b>20% OFF</b></h3>
+						<p class="overlay__content__desc">
+							Urna velit est est turpis fermentum erat sit sit dolor, morbi donec, maecenas velit morbi turpis, ipsum lacus amet amet, blandit odio augue.
+						</p>
+						<div class="py-3"></div>
+						<a href="#" class="btn btn-header orange animated bounce delay-1s">Discover Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="featured py-5">
+		<div class="container py-5">
+			<div class="row justify-content-center">
+				<div class="col-md-4 col-sm-6 mb-4">
+					<div class="text-center">
+						<div class="icon__featured">
+							<i class="fa fa-car"></i>
+						</div>
+						<p class="featured__title">Free Shipping Worldwide</p>
+						<p class="featured__desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-4">
+					<div class="text-center">
+						<div class="icon__featured">
+							<i class="fa fa-sync"></i>
+						</div>
+						<p class="featured__title">Money Back</p>
+						<p class="featured__desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-4">
+					<div class="text-center">
+						<div class="icon__featured">
+							<i class="fa fa-users"></i>
+						</div>
+						<p class="featured__title">Costumers</p>
+						<p class="featured__desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<section id="recommend py-3">
+		<div class="container py-5">
+			<div class="row justify-content-between">
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-4">
+					<h3 class="title">Best Product</h3>
+					<div class="py-3"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/4.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Lorem Ipsum</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 43,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/8.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Lorem Ipsum 2</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 43,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/1.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Lorem Ipsum 3</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 3,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/5.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Bwababa</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 70,0
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-4">
+					<h3 class="title">Recommended Product</h3>
+					<div class="py-3"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/4.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">akwat</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 43,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/7.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">akwat 2</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 43,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/8.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">akwat 3</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 39,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/2.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Bwababa</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 70,0
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-4">
+					<h3 class="title">Special offers</h3>
+					<div class="py-3"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/4.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">akwat</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 3,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/8.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Doraemon 2</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 43,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/1.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Doraemon 3</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 3,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/5.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Bwababa</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 70,0
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 mb-4">
+					<h3 class="title">Best Product</h3>
+					<div class="py-3"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/3.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Doraemon</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 88,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/8.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Lorem Ipsum 2</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 43,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/1.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Lorem Ipsum 3</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 3,0
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 mb-3">
+								<div class="recommend__box">
+									<div class="recommend__box__image">
+										<img src="assets/5.jpg" class="img-fluid">
+									</div>
+									<p class="m-0 recommend__title">
+										<a class="text-orange" href="#">Bwababa</a>
+									</p>
+									<p class="m-0">
+										<a href="#" class="recommend__start">
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+											<i class="fa fa-star text-orange"></i>
+										</a>
+									</p>
+									<p class="m-0 recommend__box__harga">
+										$ 70,0
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div id="igmage py-5">
+		<div class="d-flex py-5">
+			<div class="d-block">
+				<img src="assets/ig1.jpg" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-block">
+				<img src="assets/ig2.jpg" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-block">
+				<img src="assets/ig3.png" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-sm-block d-md-block d-none">
+				<img src="assets/ig1.jpg" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-sm-block d-md-block d-none">
+				<img src="assets/ig2.jpg" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-sm-block d-md-block  d-none">
+				<img src="assets/ig3.png" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-md-block d-sm-none d-none">
+				<img src="assets/ig1.jpg" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-md-block d-sm-none d-none">
+				<img src="assets/ig2.jpg" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+			<div class="d-md-block d-sm-none d-none">
+				<img src="assets/ig3.png" class="img-fluid max-150" onclick="showImage(this)">
+			</div>
+		</div>
+	</div>
+
+	<section id="contact">
+		<div class="container py-1">
+			<div class="py-5"></div>
+			<div class="py-3"></div>
+			<p class="text-center text-12"><span class="text-orange">Lorem ipsum dolore</span> sit amet lololo</p>
+			<h3 class="sec__title">Subscribe</h3>
+			<p class="sec__desc">Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and exclusive offers.</p>
+			<div class="py-5"></div>
+			<!-- <div class="sec__desc"> -->
+				<form class="subs">
+					<input type="email" name="email" placeholder="Enter your mail .. ">
+					<button>Submit</button>
+				</form>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<footer>
+		<div class="container py-4">
+			<hr>
+			<div class="py-1"></div>
+			<div class="d-flex justify-content-between">
+				
+				<div class="pull-left">
+					&copy; 2019 allright reserved. 
+				</div>
+				<div class="pull-right">
+					<a href="#" class="sosmed">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" class="sosmed">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#" class="sosmed">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

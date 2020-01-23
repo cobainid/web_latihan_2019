@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text To Speech</title>
+</head>
+<body>
+
+	<select name="voices">
+		<option>Change Voice</option>
+	</select>
+	<br>
+	<textarea name="text">hellow</textarea> <button onclick="played()"> Speak</button>
+</body>
+<script type="text/javascript">
+	text = document.querySelector('[name=text]');
+	listVoices = document.querySelector('[name=voices]');
+	voices = [];
+
+	msg = new SpeechSynthesisUtterance();
+
+	text.addEventListener('keydown',(key) => {
+		msg.text = text.value;
+	})
+	msg.text = text.value;
+
+	function played(){
+		speechSynthesis.speak(msg);
+	}
+</script>
+</html>

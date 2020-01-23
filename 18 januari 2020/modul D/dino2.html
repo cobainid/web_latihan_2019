@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<canvas id="canvas" width="900" height="500">
+		
+	</canvas>
+</body>
+
+<script type="text/javascript" src="assets/dino.js"></script>
+<script type="text/javascript">
+	window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+	let recognition = new SpeechRecognition();
+
+	recognition.lang = 'id';
+	recognition.interimResults = true;
+
+
+	recognition.addEventListener('result',res => {
+		let transcript = Array.from(res.results[0])
+			.map(result => result.transcript)
+			.join("");
+
+		console.log(transcript);
+		if(transcript.toLowerCase().includes('naik') || transcript.toLowerCase().includes('up') || transcript.toLowerCase().includes('loncat')){
+			isJumping = true;
+		}
+		if(transcript.toLowerCase().includes('turun')){
+			isNdengkluk = true;
+		}
+	});
+
+	recognition.addEventListener('end',recognition.start);
+	recognition.start();
+
+
+
+</script>
+</html>
